@@ -1,0 +1,130 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: hsl(30, 38%, 92%);
+  font-family: "Montserrat", sans-serif;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+main {
+  display: flex;
+}
+
+figure {
+  background-color: hsl(0, 0%, 100%);
+  border-radius: 0 10px 10px 0;
+  padding: 3.2rem 3.2rem;
+}
+
+img {
+  border-radius: 10px 0 0 10px;
+  width: 100%;
+  height: auto;
+}
+
+figure,
+.img-box {
+  max-height: 45rem;
+  max-width: 30rem;
+}
+
+h1 {
+  margin-bottom: 2rem;
+  font-size: 1.2rem;
+  font-weight: 400;
+  letter-spacing: 0.5rem;
+  text-transform: uppercase;
+}
+
+h2 {
+  color: hsl(212, 21%, 14%);
+  font-family: "Fraunces", serif;
+  line-height: 1;
+  margin-bottom: 2.3rem;
+}
+
+.description {
+  font-size: 1.4rem;
+  line-height: 1.6;
+  margin-bottom: 3rem;
+}
+
+h1,
+.description,
+.old-price {
+  color: hsl(228, 12%, 48%);
+}
+
+.pricing {
+  margin-bottom: 2.5rem;
+  display: flex;
+  gap: 2.2rem;
+}
+
+.new-price {
+  color: hsl(158, 36%, 37%);
+  font-family: "Fraunces", serif;
+}
+
+h2,
+.new-price {
+  font-size: 3.2rem;
+}
+
+.old-price {
+  align-items: center;
+  font-size: 1.3rem;
+  padding-top: 0.8rem;
+}
+
+button {
+  background-color: hsl(158, 36%, 37%);
+  color: hsl(0, 0%, 100%);
+  align-content: center;
+  display: inline-block;
+  font-size: 1.4rem;
+  font-weight: 700;
+  letter-spacing: 0.7px;
+  height: 4.8rem;
+  width: 23.6rem;
+  border: none;
+  border-radius: 10px;
+  margin-bottom: 2rem;
+}
+
+button:hover {
+  background-color: hsl(158, 36%, 15%);
+  transition: all 0.3s;
+}
+
+.cart {
+  margin-right: 1rem;
+}
+
+@media (max-width: 650px) {
+  main {
+    display: flex;
+    flex-direction: column;
+    height: 90%;
+    margin: 0;
+  }
+
+  figure {
+    border-radius: 0 0 10px 10px;
+  }
+
+  img {
+    border-radius: 10px 10px 0 0;
+  }
+}
